@@ -1,7 +1,7 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Routes as Views } from "./Routes/routes";
+import { Routes as Views } from "./routes/routes";
 
 function Router() {
   return (

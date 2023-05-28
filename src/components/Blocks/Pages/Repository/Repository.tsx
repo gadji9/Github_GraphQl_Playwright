@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
-import { GET_REPOSITORY } from "@/graphQl/Queries/getRepository";
+import { GET_REPOSITORY } from "@/graphQl/queries/getRepository";
 
 const RepositoryBlock: FunctionComponent = () => {
   const params = useParams();

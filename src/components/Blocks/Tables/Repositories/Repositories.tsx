@@ -1,10 +1,4 @@
-import React, {
-  FunctionComponent,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { FunctionComponent, useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import GridTable, { GridTableCell } from "components/UI/GridTable";
@@ -27,13 +21,13 @@ import { useLazyQuery } from "@apollo/client";
 import {
   GET_OWN_REPOSITORIES,
   GET_SEARCH_REPOSITORIES,
-} from "@/graphQl/Queries/getRepositories";
+} from "@/graphQl/queries/getRepositories";
 
 const TableFields = {
   name: {
     label: "Название",
     sortBy: "sort_name",
-    component: (name: string, index: number, item: any) => (
+    component: (name: string, _:unknown, item: any) => (
       <GridTableCell className="flex-col text-xs cursor-pointer">
         <Link to={item.id} className="text-cyan-700 text-center">
           {name}

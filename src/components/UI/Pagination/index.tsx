@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  FunctionComponent,
-  SetStateAction,
-  useEffect,
-  useState,
-} from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 
 import ArrowRight from "@/assets/icons/ArrowRight";
 import ArrowLeft from "@/assets/icons/ArrowLeft";

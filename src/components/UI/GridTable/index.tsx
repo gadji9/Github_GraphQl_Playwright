@@ -1,29 +1,4 @@
-/*
----------------------- USAGE ----------------------
-item = Some js object, like: { name: '', email: '', phone: '' }
-
-data = {[item, item, item]}
-
-fields = { {
-  someKey: {
-    label: "It's column name" or (someKey: string, columnIndex: number) => FunctionComponent,
-  
-    // Gives possibility to format cell value
-    formatter: (item[someKey], cellIndex, item, itemIndex) => newFormattedStringValue,
-    
-    // Gives possibility to custom cell
-    component: (item[someKey], cellIndex, item, itemIndex) => FunctionComponent,
-
-    sortBy: "sortingName"
-  } 
-} }
-
-onSortUpdate = (newSort: [fields[sortedField].sortBy, 'asc' | 'desc']) => any
-
-children: // If exist, would be visible, when data is empty
-*/
-
-import React, { Fragment, FunctionComponent, useEffect, useState } from "react";
+import { Fragment, FunctionComponent, useEffect, useState } from "react";
 
 interface GridTableProps {
   data?: Array<any>;
