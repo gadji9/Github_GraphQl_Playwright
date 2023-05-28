@@ -1,0 +1,3 @@
+const REPOSITORIES_PER_PAGE = 10;
+
+export { REPOSITORIES_PER_PAGE };
